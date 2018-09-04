@@ -1,4 +1,11 @@
-from bottle import run, route, static_file, error, request
+from bottle import run, route, static_file, error, request, default_app, get, response
+import os
+from os import environ as env
+from sys import argv
+
+import bottle
+
+bottle.debug(True)
 
 @route('/')
 def index():
@@ -36,4 +43,4 @@ def error404(error):
             <h3>Nothing here, sorry</h3>
     '''
 
-run(host='localhost', port=8080, debug=True, reloader=True)
+bottle.run(host='0.0.0.0', port=argv[1])
