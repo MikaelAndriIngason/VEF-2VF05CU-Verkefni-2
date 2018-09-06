@@ -1,9 +1,12 @@
-from bottle import run, route, static_file, error, request, default_app, get, response
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import os
 from os import environ as env
 from sys import argv
 
 import bottle
+from bottle import run, route, static_file, error, request, default_app, get, response
 
 bottle.debug(True)
 
