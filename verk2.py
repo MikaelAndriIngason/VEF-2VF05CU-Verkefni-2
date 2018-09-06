@@ -6,7 +6,7 @@ from os import environ as env
 from sys import argv
 
 import bottle
-from bottle import run, route, static_file, error, request, default_app, get, response
+from bottle import default_app, request, route, response, get, static_file, error
 
 bottle.debug(True)
 
@@ -46,4 +46,4 @@ def error404(error):
             <h3>Nothing here, sorry</h3>
     '''
 
-bottle.run(host='0.0.0.0', port=argv[2])
+bottle.run(host='0.0.0.0', port=argv[1])
