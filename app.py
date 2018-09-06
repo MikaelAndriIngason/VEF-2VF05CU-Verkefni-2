@@ -22,9 +22,9 @@ def index():
                 </head>
                 <body>
                     <h1>Halló heimur</h1>
-                    <a href="/forum/wiki?page=1"><img src="static/img1.png" alt="Bottle logo"></a>
-                    <a href="/forum/wiki?page=2"><img src="static/img3.jpeg" alt="Bottle logo"></a>
-                    <a href="/forum/wiki?page=3"><img src="static/img2.jpeg" alt="Bottle logo"></a>
+                    <a href="/forum/wiki?page=1"><img src="static/img1.jpg" alt="link 1"></a>
+                    <a href="/forum/wiki?page=2"><img src="static/img3.jpeg" alt="Link 2"></a>
+                    <a href="/forum/wiki?page=3"><img src="static/img2.jpeg" alt="Link 3"></a>
                 </body>
             </html>
             '''
@@ -42,7 +42,7 @@ def static_skrar(skra):
 def error404(error):
     return '''
             <link rel="stylesheet" href="static/styles.css">
-            <img src="static/img4.jpg" alt="Bottle logo" class="error">
+                <img src="static/img4.jpg" alt="Error image" class="error">
             <h3>Nothing here, sorry</h3>
     '''
 
