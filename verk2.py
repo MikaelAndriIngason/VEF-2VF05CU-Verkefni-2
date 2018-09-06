@@ -46,4 +46,4 @@ def error404(error):
             <h3>Nothing here, sorry</h3>
     '''
 
-bottle.run(host='0.0.0.0', port=argv[1])
+bottle.run(host='0.0.0.0', port=argv[2])
